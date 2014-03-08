@@ -1,29 +1,14 @@
 # Apthub
 
-TODO: Write a gem description
+This is an APT repo backed by Github's Release API.
 
-## Installation
+This is not ready yet. The checksum is not being generated yet, which is required by apt.
+When it is ready the idea will be that you can host it and it will allow you Releases to provide a simple repo.
 
-Add this line to your application's Gemfile:
+It looks for .deb uploaded on Releases and build a a list of packages.
 
-    gem 'apthub'
+### Example for sources.list
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install apthub
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/apthub/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```
+deb http://<host-name>/<github user name>  <repon name>/
+```
