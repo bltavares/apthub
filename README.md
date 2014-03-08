@@ -12,3 +12,7 @@ It looks for .deb uploaded on Releases and build a a list of packages.
 ```
 deb http://<host-name>/<github user name>  <repon name>/
 ```
+
+```
+deb http://apthub.herokuapp.com/bltavares  baseline/
+```
